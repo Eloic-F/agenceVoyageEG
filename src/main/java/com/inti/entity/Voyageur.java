@@ -16,7 +16,7 @@ public class Voyageur implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idVoyageur;
-	private String nomVoyageyr;
+	private String nomVoyageur;
 	private String prenomVoyageur;
 	private int age;
 	@OneToMany(mappedBy = "voyageur")
@@ -27,8 +27,8 @@ public class Voyageur implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Voyageur(String nomVoyageyr, String prenomVoyageur, int age) {
-		this.nomVoyageyr = nomVoyageyr;
+	public Voyageur(String nomVoyageur, String prenomVoyageur, int age) {
+		this.nomVoyageur = nomVoyageur;
 		this.prenomVoyageur = prenomVoyageur;
 		this.age = age;
 	}
@@ -49,12 +49,12 @@ public class Voyageur implements Serializable {
 		this.idVoyageur = idVoyageur;
 	}
 
-	public String getNomVoyageyr() {
-		return nomVoyageyr;
+	public String getNomVoyageur() {
+		return nomVoyageur;
 	}
 
-	public void setNomVoyageyr(String nomVoyageyr) {
-		this.nomVoyageyr = nomVoyageyr;
+	public void setNomVoyageur(String nomVoyageur) {
+		this.nomVoyageur = nomVoyageur;
 	}
 
 	public String getPrenomVoyageur() {
@@ -75,7 +75,7 @@ public class Voyageur implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Voyageur [idVoyageur=" + idVoyageur + ", nomVoyageyr=" + nomVoyageyr + ", prenomVoyageur="
+		return "Voyageur [idVoyageur=" + idVoyageur + ", nomVoyageur=" + nomVoyageur + ", prenomVoyageur="
 				+ prenomVoyageur + ", age=" + age + ", reservations=" + reservations + "]";
 	}
 

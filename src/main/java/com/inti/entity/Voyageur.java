@@ -19,7 +19,6 @@ public class Voyageur implements Serializable {
 	private String nomVoyageur;
 	private String prenomVoyageur;
 	private int age;
-	private String username;
 	@OneToMany(mappedBy = "voyageur")
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();

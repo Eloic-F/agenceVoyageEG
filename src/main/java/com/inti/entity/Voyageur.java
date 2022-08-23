@@ -15,10 +15,10 @@ import javax.persistence.Transient;
 public class Voyageur implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idVoyageur;
+	private int idVoyageur;
 	private String nomVoyageur;
 	private String prenomVoyageur;
-	private int age;
+	private long age;
 	@OneToMany(mappedBy = "voyageur")
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();
@@ -38,25 +38,25 @@ public class Voyageur implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Voyageur(String nomVoyageur, String prenomVoyageur, int age) {
+	public Voyageur(String nomVoyageur, String prenomVoyageur, long age) {
 		this.nomVoyageur = nomVoyageur;
 		this.prenomVoyageur = prenomVoyageur;
 		this.age = age;
 	}
 
-	public int getAge() {
+	public long getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(long age) {
 		this.age = age;
 	}
 
-	public Long getIdVoyageur() {
+	public int getIdVoyageur() {
 		return idVoyageur;
 	}
 
-	public void setIdVoyageur(Long idVoyageur) {
+	public void setIdVoyageur(int idVoyageur) {
 		this.idVoyageur = idVoyageur;
 	}
 

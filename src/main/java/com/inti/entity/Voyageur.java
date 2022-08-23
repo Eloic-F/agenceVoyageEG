@@ -24,6 +24,7 @@ public class Voyageur implements Serializable {
 	private List<Reservation> reservations = new ArrayList<>();
 
 	private long numDeVol;
+	private String libelle;
 	
 	public long getNumDeVol() {
 		return numDeVol;

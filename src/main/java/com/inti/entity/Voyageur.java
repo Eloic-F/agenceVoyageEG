@@ -45,7 +45,8 @@ public class Voyageur implements Serializable {
 		this.age = age;
 	}
 
-	public long getAge() {
+
+	public int getAge() {
 		return age;
 	}
 

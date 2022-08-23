@@ -16,7 +16,10 @@ public class Voyageur implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idVoyageur;
+	private long idVoyageur;
+	
+	//bro what is this
+	
 	private String nomVoyageur;
 	private String prenomVoyageur;
 	private float age;
@@ -24,13 +27,13 @@ public class Voyageur implements Serializable {
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();
 
-	private int numDeVol;
+	private float numDeVol;
 	
-	public int getNumDeVol() {
+	public float getNumDeVol() {
 		return numDeVol;
 	}
 
-	public void setNumDeVol(int numDeVol) {
+	public void setNumDeVol(float numDeVol) {
 
 		this.numDeVol = numDeVol;
 	}

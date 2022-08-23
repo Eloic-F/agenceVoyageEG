@@ -15,7 +15,7 @@ import javax.persistence.Transient;
 public class Voyageur implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idVoyageur;
+	private long idVoyageurrrrrrrrrrrrrrrr;
 	
 	//bro what is this
 	
@@ -56,7 +56,7 @@ public class Voyageur implements Serializable {
 		this.age = age;
 	}
 
-	public int getIdVoyageur() {
+	public long getIdVoyageur() {
 		return idVoyageur;
 	}
 

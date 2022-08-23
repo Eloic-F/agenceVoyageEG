@@ -13,10 +13,9 @@ import javax.persistence.Transient;
 //hello peeps
 @Entity
 public class Voyageur implements Serializable {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idVoyageur;
+	private long idVoyageurrr;
 	
 	//bro what is this
 	

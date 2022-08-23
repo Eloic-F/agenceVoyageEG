@@ -18,7 +18,7 @@ public class Voyageur implements Serializable {
 	private int idVoyageur;
 	private String nomVoyageur;
 	private String prenomVoyageur;
-	private long age;
+	private int age;
 	@OneToMany(mappedBy = "voyageur")
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();
@@ -39,7 +39,7 @@ public class Voyageur implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Voyageur(String nomVoyageur, String prenomVoyageur, long age) {
+	public Voyageur(String nomVoyageur, String prenomVoyageur, int age) {
 		this.nomVoyageur = nomVoyageur;
 		this.prenomVoyageur = prenomVoyageur;
 		this.age = age;
@@ -49,7 +49,7 @@ public class Voyageur implements Serializable {
 		return age;
 	}
 
-	public void setAge(long age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 

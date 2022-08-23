@@ -13,12 +13,13 @@ import javax.persistence.Transient;
 //hello peeps
 @Entity
 public class Voyageur implements Serializable {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idVoyageur;
 	private String nomVoyageur;
 	private String prenomVoyageur;
-	private int age;
+	private float age;
 	@OneToMany(mappedBy = "voyageur")
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();

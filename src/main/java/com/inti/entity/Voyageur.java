@@ -23,13 +23,15 @@ public class Voyageur implements Serializable {
 	@OneToMany(mappedBy = "voyageur")
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();
-	private int numDeVol;
 
+	private int numDeVol;
+	
 	public int getNumDeVol() {
 		return numDeVol;
 	}
 
 	public void setNumDeVol(int numDeVol) {
+
 		this.numDeVol = numDeVol;
 	}
 

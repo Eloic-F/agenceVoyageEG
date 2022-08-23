@@ -23,13 +23,13 @@ public class Voyageur implements Serializable {
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();
 
-	private long numDeVol;
+	private int numDeVol;
 	
-	public long getNumDeVol() {
+	public int getNumDeVol() {
 		return numDeVol;
 	}
 
-	public void setNumDeVol(long numDeVol) {
+	public void setNumDeVol(int numDeVol) {
 
 		this.numDeVol = numDeVol;
 	}

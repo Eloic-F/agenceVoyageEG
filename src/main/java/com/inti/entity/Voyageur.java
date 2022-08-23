@@ -23,6 +23,15 @@ public class Voyageur implements Serializable {
 	@OneToMany(mappedBy = "voyageur")
 	@Transient
 	private List<Reservation> reservations = new ArrayList<>();
+	private long numDeVol;
+	
+	public long getNumDeVol() {
+		return numDeVol;
+	}
+
+	public void setNumDeVol(long numDeVol) {
+		this.numDeVol = numDeVol;
+	}
 
 	public Voyageur() {
 		// TODO Auto-generated constructor stub
